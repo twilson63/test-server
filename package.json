@@ -1,0 +1,15 @@
+{
+  "name": "@twilson63/test-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "faucet": "^0.0.1",
+    "node-fetch": "^2.3.0",
+    "tape": "^4.10.1"
+  },
+  "scripts": {
+    "test": "tape test/index.test.js | faucet"
+  }
+}
