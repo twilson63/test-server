@@ -25,6 +25,16 @@ Install
 npm install @twilson63/test-server
 ```
 
+> NOTE: in your express server remember to export the app and only call the listen
+> method if the module does not have a parent
+>
+> ```
+> if (!module.parent) {
+>   app.listen(...)
+> }
+>
+> module.exports = app
+
 Test Example
 
 ``` js
